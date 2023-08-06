@@ -7,7 +7,7 @@
 
 import Foundation
 
-class ContentViewInput: ContentViewInputProcotol {
+class ContentViewInput {
     
     private(set) weak var output: ContentViewOutput?
     
@@ -25,10 +25,4 @@ private extension ContentViewInput {
     func addCount() {
         output?.count += 1
     }
-}
-
-protocol ContentViewInputProcotol {
-    
-    var output: ContentViewOutput? { get }
-    func didTapButton()
 }
