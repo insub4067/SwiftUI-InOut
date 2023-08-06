@@ -6,11 +6,10 @@
 //
 
 import SwiftUI
-import SwiftUICharts
 
 struct ContentView: View {
     
-    typealias Input = ContentViewInputProcotol
+    typealias Input = ContentViewInput
     typealias Output = ContentViewOutput
     
     let input: Input
