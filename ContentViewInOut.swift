@@ -27,6 +27,13 @@ class ContentViewInput: ContentViewInputProcotol {
     }
     
     func didTapButton() {
+        addCount()
+    }
+}
+
+private extension ContentViewInput {
+    
+    func addCount() {
         output?.count += 1
     }
 }
